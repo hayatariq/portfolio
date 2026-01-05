@@ -3,7 +3,6 @@ body {
 }
 
 
-
 .hero {
   display: flex;
   align-items: center;
@@ -19,8 +18,14 @@ body {
   border-radius: 16px;
 }
 
-.hero-text h1 {
-  font-size: 82px;
+.hero-greeting {
+  font-size: 36px;   /* smaller than name */
+  margin: 0;
+  font-weight: 400;  /* optional: lighter weight */
+}
+
+.hero-name {
+  font-size: 82px;   /* same as your old h1 */
   margin: 0;
 }
 
@@ -29,21 +34,34 @@ body {
   margin: 1rem 0 2rem 0;
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 24px;
-}
-
-.contact-list li {
-  margin-bottom: 0.5rem;
-}
 
 .contact-list a {
   text-decoration: none;
   color: inherit;
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
 
 
 /* Box styling */
@@ -57,7 +75,7 @@ body {
 
 /* Heading */
 .resume-section h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -81,13 +99,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* Buttons styling */
-.resume-actions {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
 .btn {
   font-size: 20px;
   padding: 0.75rem 1.5rem;
@@ -109,12 +120,69 @@ body {
   margin-top: 0; /* align top of box */
 }
 
-
-
-.projects-section h2 {
+/* Resume section text styling */
+.resume-text h2 {
   font-size: 36px;
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resume-intro {
+  font-size: 20px;         /* slightly smaller than heading */
+  color: #333;             /* primary text color */
+  margin-bottom: 1rem;     /* space before education */
+  line-height: 1.5;        /* improves readability */
+}
+
+.resume-education {
+  font-size: 18px;         /* smaller than intro */
+  color: #555;             /* muted secondary info */
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Adjust resume actions spacing */
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;         /* keeps buttons on small screens */
+}
+
+/* Optional: slightly smaller buttons than back-home */
+.resume-actions .btn {
+  font-size: 18px;
+  padding: 0.6rem 1.2rem;
+}
+
+/* Outline button styling for contrast */
+.resume-actions .btn-outline {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+
+.resume-actions .btn-outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* Flex container for heading + button */
+.projects-header {
+  display: flex;
+  justify-content: space-between; /* h2 left, button right */
+  align-items: center;
+  margin-bottom: 1rem; /* space before cards */
+}
+
+.projects-header h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+
+.projects-section {
+    position: relative;
 }
 
 .project-cards {
@@ -140,8 +208,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.project-card a {
-  font-size: 20px;
-  text-decoration: none;
-  color: #000;
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 }

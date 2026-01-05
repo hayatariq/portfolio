@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
       const details = button.closest('.project-card').querySelector('.project-details');
-      details.style.display = details.style.display === 'block' ? 'none' : 'block';
+
+      const isExpanded = details.classList.toggle('expanded');
+
+      button.setAttribute('aria-expanded', isExpanded);
+      button.textContent = isExpanded ? 'Hide Details' : 'View Details';
     });
   });
 });
+

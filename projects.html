@@ -16,8 +16,19 @@
 
   <main class="projects-page">
 
+    <div class="back-home">
+    <a href="index.html" class="btn">← Back to Home</a>
+    </div>
+
+    <div class="under-construction">
+    ⚠️ This projects page is currently under construction! Some projects may be incomplete. ⚠️
+    </div>
+
     <section class="projects-intro">
       <h1>Projects</h1>
+        <p class="projects-subtitle">
+        Here is a selection of projects that showcase my approach to design, data, and AI. They highlight how I combine research, creativity, and technical skills to create solutions that are both functional and meaningful.
+        </p>
     </section>
 
     <section id="ux" class="projects-section section-box">
@@ -26,34 +37,144 @@
     <div class="projects-accordion">
 
         <div class="project-card">
+
         <div class="project-header">
             <h3>Credit Buddy Management App</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">
+            View Details
+            </button>
         </div>
 
-        <div class="project-details">
-            <p>
-            End-to-end UX design project focused on financial literacy, including user research,
-            wireframing, and high-fidelity prototyping.
+        <!-- Always visible summary -->
+        <div class="project-summary">
+            <p class="project-intro">
+            Research-driven UX design project focused on improving financial literacy and credit
+            management for young adults.
             </p>
-            <p class="project-tools">Figma · UX Research · Prototyping</p>
+            <p class="project-tools">
+            Figma · UX Research · Prototyping · Usability Testing
+            </p>
         </div>
+
+        <!-- Hidden / expandable content -->
+        <div class="project-details">
+
+            <h4>Context</h4>
+            <p>
+            Credit Buddy was developed as part of CSC396, a studio-based course centered on
+            iterative, user-centered design. The project was completed in a team of five and
+            progressed from early research to a fully tested high-fidelity prototype.
+            </p>
+
+            <h4>Research & Problem Definition</h4>
+            <p>
+            The project began with individual literature reviews examining financial literacy,
+            credit behavior, and systemic barriers to understanding credit. These findings were
+            synthesized to identify a core problem: young adults lack accessible and trustworthy
+            tools for managing credit.
+            </p>
+
+            <p>
+            Primary research was conducted with a defined and reachable target audience through
+            interviews and surveys. Results were analyzed collaboratively to extract key themes,
+            pain points, and behavioral insights, which informed the design guidelines.
+            </p>
+
+            <h4>Design & Iteration</h4>
+            <p>
+            Each team member independently created low-fidelity prototypes, which were informally
+            usability tested. Insights from testing were combined to develop a unified
+            high-fidelity prototype in Figma.
+            </p>
+
+            <p>
+            Formal usability testing was conducted on the high-fidelity prototype, and the design
+            was iterated based on findings related to clarity, terminology, and user trust.
+            </p>
+
+            <h4>Deliverables</h4>
+            <ul>
+            <li>Research summaries and synthesized insights</li>
+            <li>Low- and high-fidelity prototypes</li>
+            <li>Usability testing reports and iteration notes</li>
+            <li>Final design documentation and presentation</li>
+            </ul>
+
+            <div class="project-links">
+            <a href="#" target="_blank" class="btn btn-outline">
+                View Figma Prototype
+            </a>
+            </div>
+
         </div>
+
+        </div>
+
 
         <div class="project-card">
         <div class="project-header">
             <h3>Adora Clothing Website Prototype</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">View Details</button>
         </div>
 
-        <div class="project-details">
-            <p>
-            Website redesign prototype emphasizing branding consistency, usability,
-            and responsive layout principles.
+        <!-- Always visible summary -->
+        <div class="project-summary">
+            <p class="project-intro">
+            A brand and website prototype inspired by my Depop shop, focused on translating
+            personal aesthetic and product curation into a cohesive digital retail experience.
             </p>
-            <p class="project-tools">Figma · Visual Design · UX</p>
+            <p class="project-tools">
+            Figma · Visual Design · Branding · UX Design
+            </p>
+        </div>
+
+        <!-- Hidden / expandable content -->
+        <div class="project-details">
+            <div class="project-body">
+            <h4>Context & Goal</h4>
+            <p>
+                Adora is a conceptual clothing brand developed to explore how a personal resale
+                business can be translated into a cohesive online retail experience. The project
+                focused on defining a clear brand identity, visual language, and user flow for an
+                independent fashion website.
+            </p>
+
+            <h4>Brand Exploration</h4>
+            <p>
+                The goal was to articulate a consistent aesthetic that reflected the curated,
+                vintage-inspired nature of the clothing. I explored typography, color palettes,
+                layout hierarchy, and editorial-style imagery to create a brand that felt
+                intentional and cohesive rather than purely transactional.
+            </p>
+
+            <h4>Design Process</h4>
+            <ul>
+                <li>Defined brand values and visual direction based on existing product curation</li>
+                <li>Designed homepage, product listings, and editorial-style sections</li>
+                <li>Used real product images from my Depop shop to ground the prototype</li>
+                <li>Incorporated placeholder lifestyle imagery to communicate mood and atmosphere</li>
+            </ul>
+
+            <h4>Outcome</h4>
+            <p>
+                The final deliverable is a high-fidelity website prototype that demonstrates
+                branding, visual design, and layout decisions for a small-scale fashion brand,
+                with an emphasis on storytelling and aesthetic cohesion.
+            </p>
+
+            <p class="project-note">
+                <strong>Note:</strong> Product images are from my Depop shop. Lifestyle and banner
+                imagery was used as visual reference material to communicate design intent.
+            </p>
+
+            <!-- Optional links -->
+            <div class="project-links">
+                <a href="#" target="_blank">View Figma Prototype</a>
+            </div>
+            </div>
         </div>
         </div>
+
 
     </div>
     </section>
@@ -67,36 +188,77 @@
         <div class="project-card">
         <div class="project-header">
             <h3>TTC Subway Delays Analysis</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">View Details</button>
         </div>
 
-        <div class="project-details">
-            <p>
+        <!-- Always visible summary -->
+        <div class="project-summary">
+            <p class="project-intro">
             Analyzed public transit data to uncover patterns and delays on the TTC subway system.
             Conducted exploratory data analysis, aggregated features, and visualized results
             to inform transit insights.
             </p>
-            <p class="project-tools">Python · Pandas · Data Analysis · Visualization</p>
+            <p class="project-tools">
+            Python · Pandas · NumPy · Data Analysis · Visualization
+            </p>
         </div>
+
         </div>
 
         <!-- Project 2 -->
         <div class="project-card">
         <div class="project-header">
             <h3>UFO Sightings Interactive Visualization</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">View Details</button>
         </div>
 
+        <!-- Always visible summary -->
+        <div class="project-summary">
+            <p class="project-intro">
+            Developed an interactive web-based visualization of UFO sightings across Canada, focusing on data storytelling and user interactivity using D3.js.
+            </p>
+            <p class="project-tools">
+            HTML · CSS · D3.js · Data Visualization · Interactive Design
+            </p>
+        </div>
+
+        <!-- Hidden expandable details -->
         <div class="project-details">
             <p>
-            Developed an interactive web-based visualization of UFO sightings around the world.
-            Focused on data storytelling and user interactivity using D3.js.
+            Part of CSC316, a course centered on web-based data visualization and interactive storytelling. The project allows users to explore temporal, geographic, and shape-based trends in UFO sightings, with multiple interactive features.
             </p>
-            <p class="project-tools">HTML · CSS · D3.js · Data Visualization</p>
+
+            <h4>Research & Problem Definition</h4>
+            <p>
+            Sourced and cleaned UFO sighting reports from NUFORC. Created supplemental datasets for airports, military bases, and sci-fi films. Peer interviews and testing informed usability and interaction design.
+            </p>
+
+            <h4>Interactive Features</h4>
+            <ul>
+            <li><strong>Temporal Trends Visualization:</strong> Animated line chart showing sightings over time with year-by-year dots and pop culture markers.</li>
+            <li><strong>Clock Visualization:</strong> Explore sightings by time-of-day with synchronized line charts and seasonal filtering.</li>
+            <li><strong>Interactive Map:</strong> Key sightings vs all sightings with proximity to airports/military bases; clickable icons show details.</li>
+            <li><strong>Witness & Ship Count Visualization:</strong> Interactive landing zone with visual representation of witness and UFO ship counts; dynamic filtering options.</li>
+            <li><strong>Shape Visualization:</strong> Starry night layout showing reported UFO shapes; click to reveal descriptions and counts; toggle resizing by frequency.</li>
+            </ul>
+
+            <h4>Design & Iteration</h4>
+            <p>
+            Layouts and interactions were iteratively improved based on feedback to optimize readability, clarity of insights, and user engagement.
+            </p>
+
+            <h4>Deliverables</h4> 
+            <p>
+            Complete HTML, CSS, and JS code; cleaned datasets; documentation of design decisions and iteration notes; live website and screencast.
+            </p>
+
+            <div class="project-links">
+            <a href="https://csc316project.netlify.app/" target="_blank" class="btn">View Live Website</a>
+            <a href="https://www.youtube.com/watch?v=QWxtO7A2lgc" target="_blank" class="btn btn-outline">Watch Screencast</a>
+            </div>
         </div>
         </div>
 
-    </div>
     </section>
 
 
@@ -109,7 +271,7 @@
         <div class="project-card">
         <div class="project-header">
             <h3>Employee Absenteeism Prediction Models</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">View Details</button>
         </div>
 
         <div class="project-details">
@@ -126,7 +288,7 @@
         <div class="project-card">
         <div class="project-header">
             <h3>Chair Drawings: AI vs Artist</h3>
-            <button class="toggle-details">View Details</button>
+            <button class="toggle-details btn" aria-expanded="false">View Details</button>
         </div>
 
         <div class="project-details">

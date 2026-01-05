@@ -2,6 +2,57 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 
+
+.under-construction {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background-color: #fff3cd; /* light yellow */
+  color: #856404; /* dark yellow/brown text */
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.btn {
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.back-home .btn {
+    font-size: 20px;
+    padding: 0.75rem 1.5rem;
+    width: 200px;
+}
+
+.back-home {
+    max-width: 1300px;
+    margin: 3rem auto 1rem auto;
+    text-align: left;
+}
+
+.toggle-details {
+  font-size: 16px;
+  padding: 0.4rem 0.8rem;
+  width: 150px;
+}
+
+
+
+
 /* Accordion project card */
 .project-card {
   background-color: #fff;
@@ -21,19 +72,23 @@ body {
   font-size: 28px;
 }
 
-.toggle-details {
-  font-size: 16px;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #000;
-  background-color: transparent;
-  cursor: pointer;
+.project-details {
+  max-height: 0;           /* start collapsed */
+  overflow: hidden;        /* hide content outside box */
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  margin-top: 0;
+  padding: 0 0;            /* padding animates too */
+  font-size: 18px;
+  color: #333;
 }
 
-/* Hidden by default */
-.project-details {
-  display: none;
+/* When expanded */
+.project-details.expanded {
+  max-height: 1000px;      /* large enough to fit content */
+  padding: 1rem 0;         /* restore vertical padding */
   margin-top: 1rem;
 }
+
 
 /* Tools text smaller and muted */
 .project-tools {
@@ -59,36 +114,34 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Hide details by default */
-.project-details {
-  display: none;
-  margin-top: 1rem;
-  font-size: 18px;
-  color: #333;
-}
-
-/* Button styling */
-.details-btn {
-  font-size: 18px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  border: 1px solid #000;
-  background-color: transparent;
-  border-radius: 6px;
-}
-
 .projects-page {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 3rem 3rem;
+}
+
+
+
+/* Projects page intro section */
+.projects-intro {
+  max-width: 1300px;
+  margin: 1rem auto 2rem auto; /* top + bottom spacing */
+  padding: 0 3rem;
+  text-align: center; /* center title + subtitle */
 }
 
 .projects-intro h1 {
-  font-size: 64px;
-  margin-top: 0;
-  margin-bottom: 4rem;
+  font-size: 72px;   /* main heading size */
+  margin: 0;         /* remove default extra spacing */
 }
+
+.projects-intro .projects-subtitle {
+  font-size: 20px;         /* readable, smaller than h1 */
+  color: #555;             /* subtle gray for secondary text */
+  margin-top: 1.5rem;      /* small space below heading */
+  line-height: 1.5;        /* better readability */
+}
+
+
 
 .projects-section h2 {
   font-size: 36px;
