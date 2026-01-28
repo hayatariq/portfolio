@@ -296,12 +296,12 @@ body {
 
   .projects-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.75rem;
   }
 
   .projects-header h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .project-card h3 {
